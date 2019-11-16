@@ -35,22 +35,5 @@
     </mirror>    
  
   </mirrors>
-  
-<profiles>
-    <profile>
-      <id>nexus-setup</id>
-      <repositories>
-        <repository>
-          <id>maven-releases</id>
-          <name>Maven Releases Repository</name>
-          <url>http://localhost:8081/repository/maven-releases/</url>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
 
-  <activeProfiles>
-    <activeProfile>nexus-setup</activeProfile>
-  </activeProfiles>
-  
 </settings>
