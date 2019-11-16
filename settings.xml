@@ -19,48 +19,14 @@
   </servers>
 
   <mirrors>
-    <mirror>
-      <id>maven-central</id>
-      <name>maven central</name>
-      <url>http://localhost:8081/repository/maven-central/</url>
-      <mirrorOf>*,!snaps,!rels</mirrorOf>
-    </mirror>
-    <mirror>
-      <id>maven-snapshots</id>
-      <name>maven snapshots</name>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
-      <mirrorOf>snaps</mirrorOf>
-    </mirror>
+
     <mirror>
       <id>maven-releases</id>
       <name>maven releases</name>
       <url>http://localhost:8081/repository/maven-releases/</url>
-      <mirrorOf>rels</mirrorOf>
+      <mirrorOf>*</mirrorOf>
     </mirror>    
  
   </mirrors>
-  
-    <profiles>
-    <profile>
-      <repositories>
-        <repository>
-          <id>nexus</id>
-          <name>Nexus Archive Manager</name>
-          <releases>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-            <checksumPolicy>warn</checksumPolicy>
-          </releases>
-          <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-            <checksumPolicy>warn</checksumPolicy>
-          </snapshots>
-          <url>http://localhost:8081/repository/maven-releases/</url>
-          <layout>default</layout>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
 
 </settings>
