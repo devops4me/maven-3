@@ -19,7 +19,14 @@
   </servers>
 
   <mirrors>
-
+    
+    <mirror>
+      <id>maven-releases</id>
+      <name>maven releases</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+      <mirrorOf>maven-releases</mirrorOf>
+    </mirror>    
+ 
     <mirror>
       <id>maven-central</id>
       <name>maven central</name>
