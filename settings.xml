@@ -39,5 +39,28 @@
     </mirror>    
  
   </mirrors>
+  
+    <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <id>nexus</id>
+          <name>Nexus Archive Manager</name>
+          <releases>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+            <checksumPolicy>warn</checksumPolicy>
+          </snapshots>
+          <url>http://localhost:8081/repository/maven-releases/</url>
+          <layout>default</layout>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
 
 </settings>
